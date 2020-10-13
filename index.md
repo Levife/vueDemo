@@ -10,7 +10,7 @@
 ```
 <div id="app">
 	{{ message }}
-</div>`
+</div>
 ```
 3. body里面script代码，创建vue对象，并对视图层声明对象进行注册，并且初始化
 ```
