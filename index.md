@@ -6,7 +6,8 @@
 ```
 <script src="vue.js" type="text/javascript" charset="utf-8"></script>
 ```
-2. body里面建立视图层，即一个div
+2. body里面建立视图层，即一个div。
+
 ```<div id="app">
 	{{ message }}
 </div>
