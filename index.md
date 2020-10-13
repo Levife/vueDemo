@@ -6,13 +6,16 @@
 ```
 <script src="vue.js" type="text/javascript" charset="utf-8"></script>
 ```
-2. body里面建立视图层，即一个div。
+2. body里面建立视图层，即一个div
 
-```<div id="app">
+```
+<div id="app">
 	{{ message }}
 </div>
 ```
+
 3. body里面script代码，创建vue对象，并对视图层声明对象进行注册，并且初始化
+
 ```<script type="text/javascript">
 	var app1 = new Vue({ //new Vue时，需要传递一个对象作为参数
 	el: '#app',  //el即element，用Id选择器选中div
@@ -23,6 +26,7 @@
 	});
 </script>
 ```
+
 # vue常用数据及方法
 1. 第一节中，我们对变量的初始化是在data里面进行，我们也可以申明一个var变量进行初始化
 ```
