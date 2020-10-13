@@ -45,9 +45,9 @@ vm.$data.a = 'hello';
 ```
 4. vue也暴露一些常用的方法
 
-```Object.freeze(）```函数会阻止修改现有属性
+`Object.freeze(）`函数会阻止修改现有属性
 
-```Object.$watch```可以观察一个变量的前后变化值，如：
+`Object.$watch`可以观察一个变量的前后变化值，如：
 ```
 <div id="app">
 	{{ a }}
@@ -64,7 +64,7 @@ vm.$data.a = 'hello';
 	vm.$data.a = 'sda';
 </script>
 ```
-那么控制台将打印出```sda 1```，即a变量改变后的值和先前的值
+那么控制台将打印出`sda 1`，即a变量改变后的值和先前的值
 
 # Vue的生命周期
 1. beforeCreate函数
@@ -80,40 +80,40 @@ beforeCreate:function(){
 在实例被创建完成后被立即调用,在这一步，实例已经完成以下配置：数据观测(data observer)，属性和方法的运算，watch/event事件回调.然而，挂载阶段还没开始，$el属性目前不可见
 ```
 created:function(){
-				console.log('created');
-			},
+	console.log('created');
+},
 ```
 3. beforeMount
 
 在挂载开始之前被调用，相关的渲染函数首次被调用
 ```
 beforeMount:function(){
-				console.log('beforeMount');
-			},
+	console.log('beforeMount');
+},
 ```
 4. mounted
 
 el被新创建的vm.$el替换，挂载成功
 ```
 mounted:function(){
-				console.log('mounted');
-			},
+	console.log('mounted');
+},
 ```
 5. beforeUpdate
 
 数据更新时调用
 ```
 beforeUpdate:function(){
-				console.log('beforeUpdate');
-			},
+	console.log('beforeUpdate');
+},
 ```
 6. updated
 
 组件DOM已经更新，组件更新完毕
 ```
 updated:function(){
-				console.log('updated');
-			}
+	console.log('updated');
+}
 ```
 ## 声明周期的综合运用
 ```
@@ -159,13 +159,22 @@ updated:function(){
 结果如下
 ```
 beforeCreate
+
 created
+
 beforeMount
+
 mounted
+
 Download the Vue Devtools extension for a better development experience:https://github.com/vuejs/vue-devtools
+
 You are running Vue in development mode.
+
 Make sure to turn on production mode when deploying for production.
+
 See more tips at https://vuejs.org/guide/deployment.html
+
 beforeUpdate
+
 updated
 ```
